@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document HTML</title>
+</head>
+<body>
+    <h1 id="cabecero">JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
+    
+
+    <script>
+        // Accedemos al elemento HTML, como un objeto
+        let cabecero = document.getElementById('cabecero');
+        let parrafo = document.getElementById("parrafo");
+        // cabecero.innerHTML: accedemos al contenido de elemento HTML
+        console.log('valor cabecero: ' + cabecero.innerHTML);
+        console.log('valor parrafo: ' + parrafo.innerHTML);
+
+        // Modificar el contenido del elemento HTML
+        parrafo.innerHTML = "Hola!!";
+        cabecero.innerHTML = "Aprende JavaScript";
+    </script>
+</body>
+</html>

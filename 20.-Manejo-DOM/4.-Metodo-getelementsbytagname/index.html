@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document HTML</title>
+</head>
+<body>
+    <h1 id="cabecero">JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
+    <p id="parrafo2">Bienvenido</p>
+    
+
+    <script>
+        let parrafo = document.getElementsByTagName('p');
+        console.log(`No. párrafos: ${parrafo.length}`);
+
+        // Imprimir el contenido de los elementos
+        for(i = 0; i < parrafo.length; i++){
+            console.log(parrafo[i].innerHTML);
+        }
+    </script>
+</body>
+</html>
