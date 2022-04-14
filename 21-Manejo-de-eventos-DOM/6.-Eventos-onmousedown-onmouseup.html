@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmouseover onmouseout</title>
+</head>
+<body>
+    <!-- onmousedown: ejecuta una funcion cuando damos click sobre un elemento -->
+    <!-- onmouseup: ejecuta una funcion cuando soltamos el clic de cierto elemento -->
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">
+        Manejo DOM con JavaScript
+    </h1>
+
+    <script>
+        function rojo(element){
+            // se obtiene la propiedad color de un elemento
+            console.log('Onmousedown cambio a rojo');
+            element.style.color = "red";
+        }
+        function azul(element){
+            console.log('Onmouseup cambio a azul');
+            element.style.color = "blue";
+        }
+        function verde(element){
+            console.log('click cambio a verde');
+            element.style.color = "green";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmouseover onmouseout</title>
+</head>
+<body>
+    <!-- onmouseover: ejecuta una funcion cuando el cursor pasa sobre un elemento -->
+    <!-- onmouseout: ejecuta una funcion cuando el cursos se quita de un elemento -->
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+        Manejo DOM con JavaScript
+    </h1>
+
+    <script>
+        function rojo(element){
+            // se obtiene la propiedad color de un elemento
+            element.style.color = "red";
+        }
+        function azul(element){
+            element.style.color = "blue";
+        }
+    </script>
+</body>
+</html>

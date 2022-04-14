@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Onload: se ejecuta cuando termina de cargar nuestra pagina web -->
+<body onload="entrar()">
+    <h1>Titulo</h1>
+
+    <div id="mostrar"></div>
+    <script>
+
+        function entrar(){
+            alert('Entrando a la pagina web');
+
+            // Verificar que tenga habilitados la cokies
+
+            let text = "";
+
+            if(navigator.cookieEnabled){
+                text = "La cokies estan habilitadas";
+            }else{
+                text = "Las cokies esta inhabilitadas";
+            }
+
+            // Obtenemos la referencia del elemento div con id mostrar
+            document.getElementById("mostrar").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>
